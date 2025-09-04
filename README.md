@@ -69,8 +69,11 @@ Para cada caso, o simulador imprime uma das frases acima (em inglês, conforme o
 ## 🎨 Recursos da Interface
 
 ✅ Página web responsiva com painel lateral para entrada e exibição dos resultados.
+
 ✅ Background em vídeo (background.mp4) em autoplay, loop e mute.
+
 ✅ Entrada facilitada com tecla Enter e tabulação.
+
 ✅ Resultado destacado de forma clara e visual.
 
 ## 📂 Estrutura do Projeto
