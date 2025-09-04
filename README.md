@@ -135,4 +135,5 @@ Contribuições são bem-vindas!
 ## 👤 Contato
 
 👨‍💻 Autor: Luiz Felipe de Oliveira (@luizfx.dev)
-🔗 GitHub: github.com/luizfxdev
+
+🔗 [Linkedin](https://www.linkedin.com/in/luizfxdev)
