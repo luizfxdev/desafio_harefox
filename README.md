@@ -43,8 +43,8 @@ $$
 
 </div>
 
-
-As variáveis hy e fy são números reais. O desafio é analisar se, no limite, as sequências tendem a equilíbrio, divergência ou caos.
+<br>
+As variáveis **hy** e **fy** são números reais. O desafio é analisar se, no limite, as sequências tendem a equilíbrio, divergência ou caos.
 
 📥 Entrada Esperada
 
