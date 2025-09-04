@@ -1,0 +1,301 @@
+/* Arquivo styles.css - Design Mágico para HAREFOX */
+
+/* Importação da fonte e reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração do body e background */
+body {
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  background: #050801;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Classe para vídeo de fundo */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Container principal fixo à esquerda */
+.container-principal {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 0, 207, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(255, 0, 207, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  z-index: 10;
+}
+
+/* Cabeçalho */
+.titulo-principal {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ff00cf;
+  text-shadow: 0 0 20px rgba(255, 0, 207, 0.5);
+  margin-bottom: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.descricao {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+/* Seção de inputs */
+.secao-inputs {
+  margin-bottom: 2rem;
+}
+
+.linha-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grupo-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-input label {
+  color: #ff00cf;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-shadow: 0 0 10px rgba(255, 0, 207, 0.3);
+}
+
+.grupo-input input {
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 0, 207, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.grupo-input input:focus {
+  outline: none;
+  border-color: #ff00cf;
+  box-shadow: 0 0 15px rgba(255, 0, 207, 0.4);
+  transform: translateY(-2px);
+}
+
+.grupo-input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Seção de botões */
+.secao-botoes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.botao-magico {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background-color: #050801;
+  color: #ff00cf;
+  font-weight: 700;
+  border: 2px solid #ff00cf;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.botao-magico::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 207, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.botao-magico:hover {
+  background: #ff00cf;
+  color: #050801;
+  box-shadow: 0 0 5px #ff00cf, 0 0 25px #ff00cf, 0 0 50px #ff00cf, 0 0 100px #ff00cf;
+  transform: translateY(-3px);
+}
+
+.botao-magico:hover::before {
+  left: 100%;
+}
+
+.botao-magico:active {
+  transform: translateY(-1px);
+}
+
+/* Seção de resultado */
+.secao-resultado {
+  display: none;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 0, 207, 0.3);
+}
+
+.secao-resultado h2 {
+  color: #ff00cf;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 0, 207, 0.4);
+}
+
+.resultado-detalhado {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 0, 207, 0.1);
+}
+
+.resultado-detalhado h3 {
+  color: #ff00cf;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.resultado-detalhado h3:first-child {
+  margin-top: 0;
+}
+
+.resultado-detalhado p {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.resultado-final {
+  background: linear-gradient(135deg, rgba(255, 0, 207, 0.1), rgba(3, 233, 244, 0.1));
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 0, 207, 0.3);
+  text-align: center;
+}
+
+.resultado-final h3 {
+  color: #ff00cf;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.conclusao-destaque {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 0, 207, 0.5);
+  background: linear-gradient(45deg, #ff00cf, #03e9f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .container-principal {
+    position: static;
+    transform: none;
+    left: 0;
+    top: 0;
+    margin: 1rem;
+    max-width: none;
+    width: calc(100% - 2rem);
+  }
+
+  .titulo-principal {
+    font-size: 2rem;
+  }
+
+  .linha-inputs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .secao-botoes {
+    flex-direction: column;
+  }
+
+  .botao-magico {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-principal {
+    padding: 1.5rem;
+    margin: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+
+  .titulo-principal {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* Melhorias de acessibilidade */
+.grupo-input input:focus,
+.botao-magico:focus {
+  outline: 2px solid #ff00cf;
+  outline-offset: 2px;
+}
+
+/* Suporte a preferências de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
