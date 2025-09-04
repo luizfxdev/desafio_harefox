@@ -44,15 +44,16 @@ $$
 </div>
 
 <br>
+
 As variáveis **hy** e **fy** são números reais. O desafio é analisar se, no limite, as sequências tendem a equilíbrio, divergência ou caos.
 
-📥 Entrada Esperada
+## 📥 Entrada Esperada
 
 Múltiplos casos de teste.
 
 Cada caso contém 6 números reais: a, b, c, d, h1998, f1998.
 
-Formato SPOJ:
+**Formato SPOJ:**
 
 Um inteiro N (número de casos).
 
@@ -60,19 +61,20 @@ Seguido de N conjuntos de três linhas (dois números cada).
 
 Separados por linhas em branco.
 
-📤 Saída Esperada
+## 📤 Saída Esperada
 
 Para cada caso, o simulador imprime uma das frases acima (em inglês, conforme o SPOJ).
-⚠️ A interface web também inclui mensagens em português para melhor usabilidade, mas para submissão mantenha em inglês.
 
-🎨 Recursos da Interface
+
+## 🎨 Recursos da Interface
 
 ✅ Página web responsiva com painel lateral para entrada e exibição dos resultados.
 ✅ Background em vídeo (background.mp4) em autoplay, loop e mute.
 ✅ Entrada facilitada com tecla Enter e tabulação.
 ✅ Resultado destacado de forma clara e visual.
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
+```
 desafio_harefox/
 │── assets/
 │   └── background.mp4   🎥 vídeo de fundo (opcional)
@@ -80,8 +82,9 @@ desafio_harefox/
 │── index.html           🌐 interface principal
 │── styles.css           🎨 estilos da aplicação
 │── script.js            ⚙️ lógica do simulador
+```
 
-🛠️ Como Usar Localmente
+## 🛠️ Como Usar Localmente
 
 Coloque o arquivo background.mp4 dentro da pasta assets/
 
@@ -91,7 +94,7 @@ Insira os valores de a, b, c, d, h1998, f1998.
 
 Clique em CALCULAR e veja o resultado!
 
-📌 Observações de Implementação
+## 📌 Observações de Implementação
 
 ✔️ Iterações discretas das equações para detectar comportamento limite.
 
@@ -101,7 +104,7 @@ Clique em CALCULAR e veja o resultado!
 
 ✔️ Para submissão no SPOJ, utilize a versão CLI (entrada/saída estrita).
 
-🧪 Exemplos Orientativos
+## 🧪 Exemplos Orientativos
 
 Equilíbrio: valores pequenos de acoplamento → hy e fy → 0.
 
@@ -109,12 +112,12 @@ Divergência mista: uma variável cresce exponencialmente, a outra diverge para 
 
 Caos: oscilações persistentes sem convergência.
 
-🤝 Contribuição
+## 🤝 Contribuição
 
 Contribuições são bem-vindas!
 👉 Abra uma issue ou envie um Pull Request com melhorias:
 
-🔧 Otimização da lógica
+## 🔧 Otimização da lógica
 
 ✅ Testes automatizados
 
@@ -122,11 +125,11 @@ Contribuições são bem-vindas!
 
 📹 Otimização do vídeo
 
-📜 Licença
+## 📜 Licença
 
 📌 Defina a licença desejada no repositório (ex: MIT).
 
-👤 Contato
+## 👤 Contato
 
-👨‍💻 Autor: Luiz (luizfxdev)
+👨‍💻 Autor: Luiz Felipe de Oliveira (@luizfx.dev)
 🔗 GitHub: github.com/luizfxdev
