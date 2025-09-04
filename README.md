@@ -32,12 +32,16 @@ O comportamento final é classificado em 6 possíveis saídas:
 
 O SHF é descrito pelas equações de diferenças:
 
+<div align="left">
+
 $$
 \begin{cases}
 h_{y+1} = a \cdot h_y - b \cdot f_y \\
 f_{y+1} = c \cdot f_y + d \cdot h_y
 \end{cases}
 $$
+
+</div>
 
 
 As variáveis hy e fy são números reais. O desafio é analisar se, no limite, as sequências tendem a equilíbrio, divergência ou caos.
